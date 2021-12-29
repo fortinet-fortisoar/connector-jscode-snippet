@@ -1,0 +1,48 @@
+{
+    "name": "jscode-snippet",
+    "version": "1.0.0",
+    "label": "JS Code Snippet",
+    "description": "Execute JavaScript Code as part of your Playbooks",
+    "publisher": "Community",
+    "icon_small_name": "small_icon.png",
+    "icon_large_name": "large_icon.png",
+    "configuration": {
+        "fields": [
+            {
+                "title": "Allow Imports",
+                "required": false,
+                "editable": true,
+                "visible": true,
+                "type": "checkbox",
+                "name": "allow_imports",
+                "value": false,
+                "tooltip": "Allow NodeJS Imports"
+            }
+        ]
+    },
+    "operations": [
+        {
+            "description": "Execute JS Code as part of your Playbooks",
+            "operation": "run_js_code",
+            "annotation": "run_js_code",
+            "title": "Execute JavaScript Code",
+            "parameters": [
+                {
+                    "title": "JavaScript Code",
+                    "name": "js_code",
+                    "type": "textarea",
+                    "visible": true,
+                    "editable": true,
+                    "required": true
+                }
+            ],
+            "output_schema": {
+                "code_output": {}
+            },
+            "enabled": true
+        }
+    ],
+    "category": "utilities",
+    "active": true,
+    "cs_compatible": true
+}

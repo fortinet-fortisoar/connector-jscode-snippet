@@ -1,0 +1,204 @@
+{
+  "type": "workflow_collections",
+  "data": [
+    {
+      "@type": "WorkflowCollection",
+      "name": "Sample - JS Code Snippet - 1.0.0",
+      "description": null,
+      "visible": true,
+      "image": null,
+      "uuid": "d555edd3-0728-473d-abd3-4a7836730242",
+      "id": 94,
+      "createUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
+      "createDate": 1622392689,
+      "modifyUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
+      "modifyDate": 1622392689,
+      "recordTags": [],
+      "workflows": [
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "Sample 1 > Run JS Code",
+          "aliasName": null,
+          "tag": null,
+          "description": null,
+          "isActive": true,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [],
+          "synchronous": false,
+          "lastModifyDate": 1622393284,
+          "collection": "/api/3/workflow_collections/d555edd3-0728-473d-abd3-4a7836730242",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/ae82e5a3-703a-4e0c-b5b3-a1351f62e036",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "route": "8d564b44-89a3-46b7-afc7-cb6b47b243f8",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "params": [],
+                    "records": "{{vars.input.records}}"
+                  }
+                },
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "singleRecordExecution": false
+              },
+              "status": null,
+              "top": "30",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+              "uuid": "ae82e5a3-703a-4e0c-b5b3-a1351f62e036",
+              "id": 4665
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Run JS Code",
+              "description": null,
+              "arguments": {
+                "name": "JS Code Snippet",
+                "config": "a7698c87-dfca-4bb4-a1e8-6503b9bd6b92",
+                "params": {
+                  "js_code": "function dlist(){\nvar a,b,c\na='Hello '\nb='Word'\nc='New '\ndocument.write(a+c+b)\n}\ndlist()"
+                },
+                "version": "1.0.0",
+                "connector": "jscode-snippet",
+                "operation": "run_js_code",
+                "operationTitle": "Execute JavaScript Code",
+                "pickFromTenant": false,
+                "step_variables": []
+              },
+              "status": null,
+              "top": "165",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "uuid": "b24bf5e8-026f-4ad4-9b9d-0dd297d84c4d",
+              "id": 4666
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Run JS Code",
+              "targetStep": "/api/3/workflow_steps/b24bf5e8-026f-4ad4-9b9d-0dd297d84c4d",
+              "sourceStep": "/api/3/workflow_steps/ae82e5a3-703a-4e0c-b5b3-a1351f62e036",
+              "label": null,
+              "isExecuted": false,
+              "uuid": "852ad2db-279b-46d0-afcc-1e539ebd954c"
+            }
+          ],
+          "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+          "uuid": "3cd5e613-2638-456d-a7f1-ee0db37f7879",
+          "recordTags": [],
+          "id": 1115,
+          "createUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
+          "createDate": 1622392699,
+          "modifyUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
+          "modifyDate": 1622393284,
+          "owners": [],
+          "isPrivate": false
+        },
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "Sample 2 > Run JS Code",
+          "aliasName": null,
+          "tag": null,
+          "description": null,
+          "isActive": true,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [],
+          "synchronous": false,
+          "lastModifyDate": 1622393841,
+          "collection": "/api/3/workflow_collections/d555edd3-0728-473d-abd3-4a7836730242",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/da660393-560e-47b5-871f-87c2ab088122",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "route": "f51a219b-0598-49ba-84c8-d46337e4bbc2",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "params": [],
+                    "records": "{{vars.input.records}}"
+                  }
+                },
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "singleRecordExecution": false
+              },
+              "status": null,
+              "top": "30",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+              "uuid": "da660393-560e-47b5-871f-87c2ab088122",
+              "id": 4667
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Run JS Code",
+              "description": null,
+              "arguments": {
+                "name": "JS Code Snippet",
+                "config": "a7698c87-dfca-4bb4-a1e8-6503b9bd6b92",
+                "params": {
+                  "js_code": "Object.prototype.toString.call(Function('s', 'return s+arguments[1]')(new Date(), 7).__proto__)"
+                },
+                "version": "1.0.0",
+                "connector": "jscode-snippet",
+                "operation": "run_js_code",
+                "operationTitle": "Execute JavaScript Code",
+                "pickFromTenant": false,
+                "step_variables": []
+              },
+              "status": null,
+              "top": "165",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "uuid": "360f3c3a-9f2e-43a8-9377-571b62579c02",
+              "id": 4668
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Run JS Code",
+              "targetStep": "/api/3/workflow_steps/360f3c3a-9f2e-43a8-9377-571b62579c02",
+              "sourceStep": "/api/3/workflow_steps/da660393-560e-47b5-871f-87c2ab088122",
+              "label": null,
+              "isExecuted": false,
+              "uuid": "a88b18cd-c354-46ad-bc6b-0afe84b4be11"
+            }
+          ],
+          "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+          "uuid": "779cd606-e27f-4c76-8545-acf3108fd90d",
+          "recordTags": [],
+          "id": 1116,
+          "createUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
+          "createDate": 1622393311,
+          "modifyUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
+          "modifyDate": 1622393842,
+          "owners": [],
+          "isPrivate": false
+        }
+      ]
+    }
+  ],
+  "exported_tags": []
+}

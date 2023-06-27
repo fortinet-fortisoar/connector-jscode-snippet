@@ -13,7 +13,7 @@
       "createDate": 1622392689,
       "modifyUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
       "modifyDate": 1622392689,
-      "recordTags": [],
+      "recordTags": ["jscode-snippet"],
       "workflows": [
         {
           "@type": "Workflow",
@@ -97,7 +97,7 @@
           ],
           "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
           "uuid": "3cd5e613-2638-456d-a7f1-ee0db37f7879",
-          "recordTags": [],
+          "recordTags": ["jscode-snippet"],
           "id": 1115,
           "createUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
           "createDate": 1622392699,
@@ -188,7 +188,7 @@
           ],
           "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
           "uuid": "779cd606-e27f-4c76-8545-acf3108fd90d",
-          "recordTags": [],
+          "recordTags": ["jscode-snippet"],
           "id": 1116,
           "createUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
           "createDate": 1622393311,

@@ -2,8 +2,8 @@
     "name": "jscode-snippet",
     "version": "1.0.0",
     "label": "JS Code Snippet",
-    "description": "Execute JavaScript Code as part of your Playbooks",
-    "publisher": "Community",
+    "description": "JS code snippet integration for FortiSOAR allows you to seamlessly incorporate JavaScript code snippets into your playbooks. With this integration, you can harness the power of JavaScript to enhance your automation and response workflows, enabling greater flexibility and customization.",
+    "publisher": "Fortinet CSE",
     "icon_small_name": "small_icon.png",
     "icon_large_name": "large_icon.png",
     "configuration": {
@@ -16,13 +16,14 @@
                 "type": "checkbox",
                 "name": "allow_imports",
                 "value": false,
-                "tooltip": "Allow NodeJS Imports"
+                "tooltip": "Enable to allow NodeJS Imports",
+                "description": "Specify whether you want to allow JSNode imports or not. By default it is set to False."
             }
         ]
     },
     "operations": [
         {
-            "description": "Execute JS Code as part of your Playbooks",
+            "description": "Execute JavaScript Code as part of your Playbooks",
             "operation": "run_js_code",
             "annotation": "run_js_code",
             "title": "Execute JavaScript Code",
@@ -33,7 +34,8 @@
                     "type": "textarea",
                     "visible": true,
                     "editable": true,
-                    "required": true
+                    "required": true,
+                    "description": "Specify the JS code which needs to be executed."
                 }
             ],
             "output_schema": {
@@ -42,7 +44,7 @@
             "enabled": true
         }
     ],
-    "category": "utilities",
+    "category": "Utilities",
     "active": true,
     "cs_compatible": true
 }

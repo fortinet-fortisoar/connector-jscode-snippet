@@ -13,13 +13,6 @@ Certified: No
 <p>From FortiSOAR&trade; 5.0.0 onwards, use the <strong>Connector Store</strong> to install the connector. For the detailed procedure to install a connector, click <a href="https://docs.fortinet.com/document/fortisoar/0.0.0/installing-a-connector/1/installing-a-connector" target="_top">here</a>.<br>You can also use the following <code>yum</code> command as a root user to install connectors from an SSH session:</p>
 `yum install cyops-connector-jscode-snippet`
 
-## Prerequisites to configuring the connector
-- You must have the URL of JS Code Snippet server to which you will connect and perform automated operations and credentials to access that server.
-- The FortiSOAR&trade; server should have outbound connectivity to port 443 on the JS Code Snippet server.
-
-## Minimum Permissions Required
-- N/A
-
 ## Configuring the connector
 For the procedure to configure a connector, click [here](https://docs.fortinet.com/document/fortisoar/0.0.0/configuring-a-connector/1/configuring-a-connector)
 ### Configuration parameters

@@ -6,6 +6,7 @@
     "publisher": "Fortinet CSE",
     "icon_small_name": "small_icon.png",
     "icon_large_name": "large_icon.png",
+    "help_online": "https://github.com/fortinet-fortisoar/connector-jscode-snippet/tree/release/1.0.0/docs/JscodeSnippetConnectorDoc.md",
     "configuration": {
         "fields": [
             {
